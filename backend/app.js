@@ -6,7 +6,7 @@ const helmet = require("helmet");
 const cors = require('cors');
 app.use(cors({
     origin: 'http://localhost:5173',
-    methods: ["GET", "POST", "PATCH", "DELETE", "PATCH"],
+    methods: ["GET", "POST", "PATCH", "DELETE"]
 }));
 
 const morgan = require('morgan');
