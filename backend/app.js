@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const hpp = require("hpp");
 
 const cors = require('cors');
 app.use(cors({
@@ -12,6 +13,7 @@ app.use(morgan('dev'));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(hpp());
 
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
