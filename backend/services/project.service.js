@@ -26,9 +26,6 @@ exports.createProjectService = async({ name, userid }) => {
     }
 
     return project;
-
-
-
 }
 
 
